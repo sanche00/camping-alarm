@@ -1,5 +1,8 @@
 from enum import Enum
 from abc import *
+from .message import ChatMessage
+from .receiveHandler import ReceiveHandler
+
 class RobotType(Enum):
     TELEGRAM = 1
 
@@ -18,9 +21,9 @@ class Robot(metaclass=ABCMeta):
         self.key = key
 
     @abstractmethod
-    def sendMessage(self, strMessage:str):
+    def sendMessage(self, message:ChatMessage):
         pass
 
     @abstractmethod
-    def readMessage(self, callback):
+    def readMessage(self, receiveHandler:ReceiveHandler):
         pass
