@@ -1,0 +1,4 @@
+2023-04-24 23:22:20,161 - root - INFO - load logging config from source code
+2023-04-24 23:24:54,158 - __main__ - INFO - test
+2023-04-24 23:25:24,301 - D:\projects\python\camping-alarm\main\logger_config.py__main__ - INFO - test
+2023-04-24 23:25:35,447 - __main__ - INFO - test

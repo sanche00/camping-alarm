@@ -28,4 +28,5 @@ def loadLogConfigCode():
     logger.addHandler(streamHandler)
     logger.info("load logging config from source code")
     logger.setLevel(logging.INFO)
+    return logger
 
